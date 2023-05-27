@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 800px;
+  /* width: 800px; */
   padding: 50px 0;
   background-color: lightgrey;
-  font-family: sans-serif;
 }
 .description {
   display: flex;

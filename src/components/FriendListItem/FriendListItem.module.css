@@ -1,0 +1,22 @@
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+  width: 280px;
+  background-color: #fff;
+  border: solid darkgrey;
+  border-radius: 8px;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1), 4px 0px 8px rgba(0, 0, 0, 0.2),
+    -4px 0px 8px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 24px;
+  font-weight: 600;
+}
