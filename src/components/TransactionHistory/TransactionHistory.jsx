@@ -1,9 +1,12 @@
+// import React from 'react';
 import TransactionHistoryItem from 'components/TransactionHistoryItem/TransactionHistoryItem';
 import css from './TransactionHistory.module.css';
 
 function TransactionHistory(items) {
+  //   items = { items };
+  //   console.log(items);
   return (
-    <table class="transaction-history">
+    <table className={css.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
@@ -13,8 +16,24 @@ function TransactionHistory(items) {
       </thead>
 
       <tbody>
+        <tr>
+          <td>Invoice</td>
+          <td>125</td>
+          <td>USD</td>
+        </tr>
+        <tr>
+          <td>Withdrawal</td>
+          <td>85</td>
+          <td>USD</td>
+        </tr>
+        <TransactionHistoryItem items />
         {items.map(item => (
-          <TransactionHistoryItem />
+          <TransactionHistoryItem
+            type={item.type}
+            amount={item.amount}
+            currency={item.currency}
+            id={item.id}
+          />
         ))}
       </tbody>
     </table>
