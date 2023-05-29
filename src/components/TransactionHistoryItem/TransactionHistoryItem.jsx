@@ -1,4 +1,4 @@
-import css from './TransactionHistoryItem.module.css';
+// import css from './TransactionHistoryItem.module.css';
 
 function TransactionHistoryItem(type, amount, currency, id) {
   console.log(type, amount, currency, id);

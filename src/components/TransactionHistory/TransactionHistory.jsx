@@ -1,5 +1,5 @@
 // import React from 'react';
-import TransactionHistoryItem from 'components/TransactionHistoryItem/TransactionHistoryItem';
+// import TransactionHistoryItem from 'components/TransactionHistoryItem/TransactionHistoryItem';
 import css from './TransactionHistory.module.css';
 
 function TransactionHistory(items) {
