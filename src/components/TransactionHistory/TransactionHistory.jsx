@@ -3,7 +3,7 @@
 import css from './TransactionHistory.module.css';
 
 function TransactionHistory(items) {
-  //   items = { items };
+  // items = { items };
   //   console.log(items);
   return (
     <table className={css.transactionHistory}>
@@ -26,15 +26,14 @@ function TransactionHistory(items) {
           <td>85</td>
           <td>USD</td>
         </tr>
-        {/* <TransactionHistoryItem items />
+
         {items.map(item => (
-          <TransactionHistoryItem
-            type={item.type}
-            amount={item.amount}
-            currency={item.currency}
-            id={item.id}
-          />
-        ))} */}
+          <tr>
+            <td>{item.type}</td>
+            <td>{item.amount}</td>
+            <td>{item.currency}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
