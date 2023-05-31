@@ -46,10 +46,11 @@
 
 .transactionHistory th,
 .transactionHistory td {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   width: 33%;
   color: gray;
+  font-weight: 600;
 }
 .transactionHistory tr:nth-child(even) {
   background-color: lightgrey;
