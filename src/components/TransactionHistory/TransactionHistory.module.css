@@ -1,8 +1,66 @@
-/* .transactionHistory {
-} */
+.transactionHistory {
+  display: flex;
+  flex-direction: column;
 
-.transactionHistory tr,
-.transactionHistory th {
-  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  margin: 0 auto;
+}
+.transactionHistory tr td:first-child {
+  text-transform: capitalize;
+  text-align: initial;
+  text-indent: 35%;
+}
+
+.transactionHistory thead {
+  border-collapse: collapse;
+  border-color: lightgray;
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+}
+.transactionHistory thead tr {
+  width: 100%;
+  display: flex;
+  border-radius: 4px 4px 0 0;
+}
+.transactionHistory thead th {
+  width: 33%;
+  color: #fff;
+  border: 1px solid lightgrey;
+}
+.transactionHistory tbody {
+  border-collapse: collapse;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.transactionHistory tbody td {
   border: 1px solid #2a2a2a;
+}
+.transactionHistory tbody tr {
+  width: 100%;
+  display: flex;
+}
+
+.transactionHistory th,
+.transactionHistory td {
+  padding: 10px;
+  text-align: center;
+  width: 33%;
+  color: gray;
+}
+.transactionHistory tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.transactionHistory tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.transactionHistory thead tr:first-child {
+  background-color: rgb(22, 202, 175);
+}
+.transactionHistory tbody tr:last-child {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
