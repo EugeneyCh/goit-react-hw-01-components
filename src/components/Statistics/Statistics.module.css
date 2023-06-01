@@ -23,15 +23,15 @@
   margin-top: 0;
   margin: 0;
 }
-.stat_list {
+.statList {
   display: flex;
   padding: 0;
   margin: 0;
 }
-.stat_list .item:first-child {
+.statList .item:first-child {
   border-radius: 0 0 0 4px;
 }
-.stat_list .item:last-child {
+.statList .item:last-child {
   border-radius: 0 0 4px 0;
 }
 .item {

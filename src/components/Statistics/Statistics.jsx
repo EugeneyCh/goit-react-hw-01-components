@@ -1,10 +1,11 @@
 import css from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 function Statistics({ title, stats }) {
   return (
     <section className={css.statistics}>
       <h2 className={css.title}>{title}</h2>
-      <ul className={css.stat_list}>
+      <ul className={css.statList}>
         {stats.map(stat => (
           <li
             key={css.id}
@@ -28,5 +29,13 @@ function getRandomBackgroundColor() {
 
   return color;
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stat: {
+    label: PropTypes.string,
+    percentage: PropTypes.number,
+  },
+};
 
 export default Statistics;
